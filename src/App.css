@@ -1,0 +1,72 @@
+#body {
+	height: 100vh;
+	width: 100vw;
+}
+
+#root {
+	height: 100vh;
+	width: 100vw;
+	background: red;
+}
+
+#app {
+	display: grid;
+	grid-template-rows: 2em auto 15%;
+	grid-template-columns: 100px auto auto auto auto auto auto;
+	grid-template-areas:
+		"leftbar leftimgheader leftimgheader leftimgheader rightimgheader rightimgheader rightimgheader"
+		"leftbar leftimg leftimg leftimg rightimg rightimg rightimg"
+		"leftbar keepleft keepleft skip skip keepright keepright";
+	justify-items: center;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#leftbar {
+	justify-self: stretch;
+	grid-area: leftbar;
+	background: pink;
+}
+
+#leftimgheader {
+	justify-self: stretch;
+	grid-area: leftimgheader;
+	background: black;
+}
+
+#rightimgheader {
+	justify-self: stretch;
+	grid-area: rightimgheader;
+	background: white;
+}
+
+#leftimg {
+	justify-self: stretch;
+	grid-area: leftimg;
+	background: lightblue;
+}
+
+#rightimg {
+	justify-self: stretch;
+	grid-area: rightimg;
+	background: lightcoral;
+}
+
+#keepleft {
+	justify-self: stretch;
+	grid-area: keepleft;
+	background: orange;
+}
+
+#skip {
+	justify-self: stretch;
+	grid-area: skip;
+	background: purple;
+}
+
+#keepright {
+	justify-self: stretch;
+	grid-area: keepright;
+	background: lightgreen;
+}
