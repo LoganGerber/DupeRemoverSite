@@ -1,12 +1,6 @@
-import './App.css'
-
-function ImageView({ imgData }) {
-	return (
-		<div>
-			{imgData}
-		</div>
-	);
-}
+import './App.css';
+import ImageView from './ImageView';
+import ActionButton from './ActionButton';
 
 function App() {
 	return (
@@ -27,13 +21,19 @@ function App() {
 				<ImageView imgData="myRightImage" />
 			</div>
 			<div className="margin-area" id="keepleft">
-				Keep Left Image
+				<ActionButton>
+					Keep Left Image
+				</ActionButton>
 			</div>
 			<div className="margin-area" id="skip">
-				Skip
+				<ActionButton>
+					Skip
+				</ActionButton>
 			</div>
 			<div className="margin-area" id="keepright">
-				Keep Right Image
+				<ActionButton>
+					Keep Right Image
+				</ActionButton>
 			</div>
 		</div>
 	);
