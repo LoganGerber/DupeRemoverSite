@@ -1,6 +1,10 @@
 import './ImageView.css';
 
-function ImageView({ imgData }) {
+type ImageViewProps = {
+	imgData: React.ReactNode;
+}
+
+function ImageView({ imgData }: ImageViewProps) {
 	return (
 		<div>
 			{imgData}
