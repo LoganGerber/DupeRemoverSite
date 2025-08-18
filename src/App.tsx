@@ -1,5 +1,13 @@
 import './App.css'
 
+function ImageView({ imgData }) {
+	return (
+		<div>
+			{imgData}
+		</div>
+	);
+}
+
 function App() {
 	return (
 		<div id="app">
@@ -12,20 +20,20 @@ function App() {
 			<div id="rightimgheader">
 
 			</div>
-			<div id="leftimg">
-
+			<div className="margin-area" id="leftimg">
+				<ImageView imgData="myLeftImage" />
 			</div>
-			<div id="rightimg">
-
+			<div className="margin-area" id="rightimg">
+				<ImageView imgData="myRightImage" />
 			</div>
-			<div id="keepleft">
-
+			<div className="margin-area" id="keepleft">
+				Keep Left Image
 			</div>
-			<div id="skip">
-
+			<div className="margin-area" id="skip">
+				Skip
 			</div>
-			<div id="keepright">
-
+			<div className="margin-area" id="keepright">
+				Keep Right Image
 			</div>
 		</div>
 	);
