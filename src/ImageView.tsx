@@ -6,8 +6,8 @@ type ImageViewProps = {
 
 function ImageView({ imgData }: ImageViewProps) {
 	return (
-		<div>
-			{imgData}
+		<div className="imgBlock">
+			<img src="/3448422.jpg" />
 		</div>
 	);
 }
