@@ -9,10 +9,10 @@ function App() {
 
 			</div>
 			<div id="leftimgheader">
-
+				Left/Image/Location
 			</div>
 			<div id="rightimgheader">
-
+				Right/Image/Location
 			</div>
 			<div className="margin-area" id="leftimg">
 				<ImageView imgData="myLeftImage" />
